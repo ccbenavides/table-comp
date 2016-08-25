@@ -1,0 +1,52 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`com-javi`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="com-javi">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>nombre</th>
+          <th>apellidos</th>
+          <th>peso</th>
+          <th>tamaño</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>christian</td>
+          <td>benavides</td>
+          <td>70 kilos</td>
+          <td>1.69m</td>
+        </tr>
+      
+      </tbody>
+    </table>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'com-javi',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'com-javi',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
